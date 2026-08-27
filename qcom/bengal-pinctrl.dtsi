@@ -105,7 +105,7 @@
 
 			sd-cd {
 				pins = "gpio88";
-				bias-disable;
+				bias-pull-up;
 				drive-strength = <2>;
 			};
 		};
@@ -556,6 +556,38 @@
 				config {
 					pins = "gpio4", "gpio5",
 							"gpio69", "gpio70";
+					drive-strength = <6>;
+					bias-disable;
+				};
+			};
+		};
+
+		qupv3_se2_spi_pins: qupv3_se2_spi_pins {
+			qupv3_se2_spi_active: qupv3_se2_spi_active {
+				mux {
+					pins = "gpio6", "gpio7",
+							"gpio71", "gpio80";
+					function = "qup2";
+				};
+
+				config {
+					pins = "gpio6", "gpio7",
+							"gpio71", "gpio80";
+					drive-strength = <6>;
+					bias-disable;
+				};
+			};
+
+			qupv3_se2_spi_sleep: qupv3_se2_spi_sleep {
+				mux {
+					pins = "gpio6", "gpio7",
+							"gpio71", "gpio80";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio6", "gpio7",
+							"gpio71", "gpio80";
 					drive-strength = <6>;
 					bias-disable;
 				};

@@ -17,6 +17,11 @@ ifeq ($(CONFIG_ARCH_ANORAK), y)
 dtbo-y += anorak-vidc.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_KHAJE), y)
+dtbo-y += khaje-vidc.dtbo
+dtbo-y += khaje-vidc-iot.dtbo
+endif
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo

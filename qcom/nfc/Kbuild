@@ -46,6 +46,8 @@ ifeq ($(CONFIG_ARCH_TRINKET),y)
 dtbo-y += nxp/trinket-nfc-iot-idp.dtbo
 endif
 
+dtbo-$(CONFIG_FOGONA_DTB) += st/khaje-nfc-moto-fogona-evt.dtbo
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
