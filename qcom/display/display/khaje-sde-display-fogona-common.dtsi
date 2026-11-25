@@ -164,6 +164,7 @@
         qcom,mdss-dsi-bl-min-level = <9>;
         qcom,mdss-dsi-bl-max-level = <1637>;
         qcom,mdss-brightness-max-level = <1637>;
+        qcom,mdss-dsi-bl-inverted-dbv;
         qcom,platform-reset-gpio = <&tlmm 82 0>;
         qcom,dsi-supported-dfps-list = <60 90>;
         qcom,mdss-dsi-pan-enable-dynamic-fps;
@@ -212,6 +213,7 @@
         qcom,mdss-dsi-bl-min-level = <9>;
         qcom,mdss-dsi-bl-max-level = <1637>;
         qcom,mdss-brightness-max-level = <1637>;
+        qcom,mdss-dsi-bl-inverted-dbv;
         qcom,platform-reset-gpio = <&tlmm 82 0>;
         qcom,dsi-supported-dfps-list = <60 90>;
         qcom,mdss-dsi-pan-enable-dynamic-fps;
@@ -258,6 +260,7 @@
         qcom,mdss-dsi-bl-min-level = <9>;
         qcom,mdss-dsi-bl-max-level = <1637>;
         qcom,mdss-brightness-max-level = <1637>;
+        qcom,mdss-dsi-bl-inverted-dbv;
         qcom,platform-reset-gpio = <&tlmm 82 0>;
         qcom,dsi-supported-dfps-list = <60 90>;
         qcom,mdss-dsi-pan-enable-dynamic-fps;
